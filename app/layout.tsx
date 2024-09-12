@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Anek_Telugu } from 'next/font/google';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -11,6 +12,11 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const anekTelugu = Anek_Telugu({
+  subsets: ['latin'],
+  variable: '--font-caption',
 });
 
 export const metadata: Metadata = {
