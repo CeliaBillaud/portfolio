@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
 		fontFamily: {
-			caption: ["var(--font-caption)"],
+			caption: ['var(--font-anek-telugu)'],
 		},
   		colors: {
   			background: 'hsl(var(--background))',

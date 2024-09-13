@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 const anekTelugu = Anek_Telugu({
   subsets: ['latin'],
-  variable: '--font-caption',
+  variable: '--font-anek-telugu',
 });
 
 export const metadata: Metadata = {
@@ -32,7 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      //génère automatiquement une variable CSS personnalisée pour cette police
+        className={`${geistSans.variable} ${geistMono.variable} ${anekTelugu.variable}  antialiased`}
       >
         {children}
       </body>
