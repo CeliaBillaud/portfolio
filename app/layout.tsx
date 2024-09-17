@@ -30,10 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr" className="h-full">
       <body
       //génère automatiquement une variable CSS personnalisée pour cette police
-        className={`${geistSans.variable} ${geistMono.variable} ${anekTelugu.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${anekTelugu.variable}  antialiased h-full bg-background text-foreground`}
       >
         {children}
       </body>
