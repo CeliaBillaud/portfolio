@@ -6,9 +6,10 @@ export const Header = () => {
     return(
         <header className="sticky top-0">
             <Section className="flex items-baseline">
-                <p className="text-4xl font-bold text-primary-foreground">
+                <p className="text-4xl font-bold text-primary">
                     Hello !
                 </p>
+                {/* todo : changeer alignement */}
                 <nav className="flex-1">
                 {/* copy components from shadcn/ui */}
                     <ul>
