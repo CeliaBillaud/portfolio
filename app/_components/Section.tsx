@@ -6,7 +6,7 @@ import { PropsWithChildren } from "react"
 export const Section= (props: PropsWithChildren<{className?:string}>) => {
     return(
         // on vient étendre les classname grâce au cn
-        <section className={cn("max-w-xl px-4 m-auto", props.className)}>
+        <section className={cn("max-w-3xl px-4 m-auto", props.className)}>
             {props.children}
         </section>
     )
