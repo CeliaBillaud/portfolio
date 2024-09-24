@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const Hero = () => {
     return (
-        <Section >
+        <Section>
             <h1 className="text-5xl font-bold my-2 font-caption">Célia Billaud • Développeuse web</h1>
             <h2 className="text-xl mb-4">Votre future alternante ?</h2>
             <p className="text-base">

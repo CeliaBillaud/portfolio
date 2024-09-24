@@ -22,6 +22,7 @@ const anekTelugu = Anek_Telugu({
 export const metadata: Metadata = {
   title: "Célia Billaud • Développeuse Web",
   description: "Développeuse web joyeuse et dynamique, passionnée par Symfony et React, à la recherche d'une alternance pour créer des expériences web innovantes.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover",
 };
 
 export default function RootLayout({
