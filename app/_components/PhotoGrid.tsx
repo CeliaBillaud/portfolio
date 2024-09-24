@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export const PhotoGrid = () => {
     return (
-        <div className="max-w-5xl px-4 m-auto grid grid-cols-4 gap-1">
-            <div className="-rotate-25 col-span-2 lg:col-span-1 h-64 relative ">
+        <div className="max-w-5xl px-4 m-auto grid sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-1 h-[32rem]">
+            <div className="hidden sm:block sm:col-span-1 lg:col-span-1 relative ">
                 <Image
                     src="/interrail2.jpg"
                     alt="Mon interrail"
@@ -13,7 +13,7 @@ export const PhotoGrid = () => {
                     className="rounded-lg"
                 />
             </div>
-            <div className="col-span-2 lg:col-span-1 h-64 relative">
+            <div className="col-span-1 lg:col-span-1 lg:row-span-2 relative">
                 <Image
                     src="/diving.jpg"
                     alt="Célia plonge"
@@ -22,7 +22,7 @@ export const PhotoGrid = () => {
                     className="rounded-lg"
                 />
             </div>
-            <div className="hidden lg:block lg:col-span-1 h-64 relative">
+            <div className="hidden lg:block lg:col-span-1 lg:row-span-2 relative">
                 <Image
                     src="/skate1.jpg"
                     alt="Célia fait du skate"
@@ -31,7 +31,7 @@ export const PhotoGrid = () => {
                     className="rounded-lg"
                 />
             </div>
-            <div className="hidden lg:block lg:col-span-1 h-64 relative">
+            <div className="hidden lg:block lg:col-span-1 lg:row-span-1 relative">
                 <Image
                     src="/photography.jpg"
                     alt="Célia fait de la photo"
