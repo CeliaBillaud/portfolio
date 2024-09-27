@@ -18,32 +18,34 @@ const Code = ({ className, children, icon: Icon, ...props }: ComponentPropsWithR
 
 export const Hero = () => {
     return (
-        <Section>
+        <Section className='flex flex-col gap-2'>
             <h1 className="text-5xl text-primary font-bold font-caption">Célia Billaud • Développeuse web</h1>
             <h2 className="text-3xl font-caption">Votre future alternante ?</h2>
-            <p className="text-base md:text-justify">
-                J'aime créer des projets en <Code icon={FaPhp}>PHP</Code><Code icon={SiSymfony}>Symfony</Code> et je me forme au monde merveilleux de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>
-            </p>
-            <p className="text-base md:text-justify">
-                Ancienne étudiante en Finance Internationale et vidéaste, attirée par la résolution de problèmes et la création, je me suis lancée dans le développement web avec l'
-                <Link href="https://oclock.io/" target="_blank">
-                    <Code> 
-                            <Image 
-                            src="/logooclock.png" 
-                            width = {20}
-                            height = {20}
-                            alt="logo O'clock" 
-                            className="mr-1"/>
-                    École O'clock
-                    </Code>.
-                </Link>
-            </p>
-            <p className="text-base md:text-justify">
-                Je recherche une <strong>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d'Applications.
-            </p>
-            <p className="text-base md:text-justify">
-                Passionnée, créative, toujours en quête d'apprentissage !
-            </p>
+            <div>
+                <p className="text-base md:text-justify">
+                    J'aime créer des projets en <Code icon={FaPhp}>PHP</Code><Code icon={SiSymfony}>Symfony</Code> et je me forme au monde merveilleux de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>
+                </p>
+                <p className="text-base md:text-justify">
+                    Ancienne étudiante en Finance Internationale et vidéaste, attirée par la résolution de problèmes et la création, je me suis lancée dans le développement web avec l'
+                    <Link href="https://oclock.io/" target="_blank">
+                        <Code> 
+                                <Image 
+                                src="/logooclock.png" 
+                                width = {20}
+                                height = {20}
+                                alt="logo O'clock" 
+                                className="mr-1"/>
+                        École O'clock
+                        </Code>.
+                    </Link>
+                </p>
+                <p className="text-base md:text-justify">
+                    Je recherche une <strong>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d'Applications.
+                </p>
+                <p className="text-base md:text-justify">
+                    Passionnée, créative, toujours en quête d'apprentissage !
+                </p>
+            </div>
         </Section>
     );
 };
