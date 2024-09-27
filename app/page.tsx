@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main>
       <Header/>
-      <Spacing height={32}/>
+      <Spacing size="sm"/>
       <Hero/>
-      <Spacing height={32}/>
+      <Spacing size="sm"/>
       <PhotoGrid/>
       
       
