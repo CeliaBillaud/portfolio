@@ -42,9 +42,9 @@ export const Hero = () => {
                 <p className="text-base md:text-justify">
                     Je recherche une <strong>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d'Applications.
                 </p>
-                <p className="text-base md:text-justify">
+                {/* <p className="text-base md:text-justify">
                     Passionnée, créative, toujours en quête d'apprentissage !
-                </p>
+                </p> */}
             </div>
         </Section>
     );
