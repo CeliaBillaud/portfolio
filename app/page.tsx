@@ -9,11 +9,11 @@ export default function Home() {
     <main>
       <Header/>
 
-      <Spacing size="sm"/>
+      <Spacing size="xs"/>
         
       <Hero/>
 
-      <Spacing size="xs"/>
+      <Spacing size="sm"/>
 
       <PhotoGrid/>
 
