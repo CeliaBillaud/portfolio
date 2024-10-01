@@ -1,5 +1,5 @@
 import { Section } from "./Section"
-import Image from 'next/image'
+import Image from "next/image"
 
 export const PhotoGrid = () => {
     return (
@@ -8,8 +8,8 @@ export const PhotoGrid = () => {
                 <Image
                     src="/interrail2.jpg"
                     alt="Mon interrail"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="rounded-lg"
                 />
             </div>
@@ -17,8 +17,8 @@ export const PhotoGrid = () => {
                 <Image
                     src="/diving.jpg"
                     alt="Célia plonge"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="rounded-lg"
                 />
             </div>
@@ -26,8 +26,8 @@ export const PhotoGrid = () => {
                 <Image
                     src="/skate1.jpg"
                     alt="Célia fait du skate"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="rounded-lg"
                 />
             </div>
@@ -35,8 +35,8 @@ export const PhotoGrid = () => {
                 <Image
                     src="/photography.jpg"
                     alt="Célia fait de la photo"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="rounded-lg"
                 />
             </div> 
