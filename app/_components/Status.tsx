@@ -3,8 +3,9 @@ import { Section } from "./Section"
 import {Home, LucideIcon, Beer, BriefcaseBusiness, Trophy} from "lucide-react"
 import Link from "next/link"
 import { IconType } from 'react-icons'
-import { FaPhp, FaBootstrap } from 'react-icons/fa'
-import { SiSymfony, SiMysql, SiSass, SiJavascript } from 'react-icons/si'
+import { FaPhp, FaBootstrap, FaReact, FaCss3Alt } from 'react-icons/fa'
+import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import { RiNextjsFill } from "react-icons/ri";
 
 
 export const Status = () => {
@@ -43,23 +44,37 @@ const PROJECT = [
         title: "O'MyBeer",
         description: "O’MyBeer est une application dédiée à l'univers de la bière, qui permet aux utilisateurs d’explorer une vaste sélection de bières et de marques du monde entier.", 
         url: "https://www.omybeer.ovh/",
-        techno: [FaPhp, SiSymfony, SiMysql, SiSass, FaBootstrap, SiJavascript]
+        techno: [SiSass, FaBootstrap, SiJavascript, FaPhp, SiSymfony, SiMysql]
     },
     {
         Logo: BriefcaseBusiness,
         title: "Mon Portfolio",
         description: "lorem ipsum dolor sit amet consectetur adipisicing", 
         url: "/",
-        techno: []
+        techno: [RiNextjsFill, FaReact, SiTypescript, SiTailwindcss ]
     },
     {
         Logo: Trophy,
         title: "Rubgy Quizz",
         description: "lorem ipsum dolor sit amet consectetur adipisicing", 
         url: "https://celiabillaud.github.io/rugby-quizz/",
-        techno: []
+        techno: [FaCss3Alt, SiJavascript]
     }
 ]
+
+const iconNames = { 
+    SiJavascript: "Javascript",
+    SiTypescript: "Typescript", 
+    SiReact: "React",  
+    SiSass: "Sass",
+    SiTailwindcss: "Tailwind CSS",
+    SiMysql: "MySQL",
+    SiSymfony: "Symfony",
+    FaPhp: "PHP",
+    FaBootstrap: "Bootstrap",
+    FaCss3Alt: "CSS",
+    RiNextjsFill: "Next.js"
+}
 
 type ProjetProps = {
     Logo: LucideIcon;
@@ -80,9 +95,16 @@ const Project = (props :
                         <p className="text-lg font-semibold">{props.title}</p>
                     </div>
                     <div className="flex gap-2">
-                        {props.techno.map((Icon, index) => (
-                            <Icon key={index} className="text-muted-foreground size-6" />
-                        ))}
+                        {props.techno.map((Icon, index) => {
+                            //todo add title on hover
+                            return (
+                                <Icon 
+                                    key={index} 
+                                    className="text-muted-foreground size-6"
+                                    role="img" />
+                                );
+                })
+                        }
                     </div>
                 </Link>
                 <p className="text-sm text-muted-foreground p-1">{props.description}</p>
