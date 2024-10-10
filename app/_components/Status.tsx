@@ -90,7 +90,7 @@ const Project = (props :
                 <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-color p-1 justify-between" target="alt">
                     <div className="flex items-center gap-4">
                         <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-                            <props.Logo />
+                            <props.Logo size={16} />
                         </span>
                         <p className="text-lg font-semibold">{props.title}</p>
                     </div>

@@ -13,7 +13,7 @@ export default function Home() {
         
       <Hero/>
 
-      <Spacing size="sm"/>
+      <Spacing size="xs"/>
 
       <PhotoGrid/>
 
