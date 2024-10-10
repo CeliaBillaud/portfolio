@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { FaPhp, FaReact } from 'react-icons/fa';
 import { SiSymfony, SiNextdotjs } from 'react-icons/si';
 import Link from 'next/link';
-import Image from "next/image"
+import Image from "next/image";
 
 const Code = ({ className, children, icon: Icon, ...props }: ComponentPropsWithRef<"span"> & { icon?: React.ElementType }) => {
     return (
