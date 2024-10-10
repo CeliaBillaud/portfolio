@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
-import {Home, LucideIcon, Beer, BriefcaseBusiness, Trophy} from "lucide-react"
+import {Home, LucideIcon, Beer, BriefcaseBusiness, Trophy, MessageSquareHeart} from "lucide-react"
 import Link from "next/link"
 import { IconType } from 'react-icons'
 import { FaPhp, FaBootstrap, FaReact, FaCss3Alt } from 'react-icons/fa'
@@ -14,7 +14,7 @@ export const Status = () => {
         <Card className="flex-[3] p-4 flex flex-col gap-2 w-full lg:w-1/2">
             <p className="text-lg text-muted-foreground">Mes projets préférés</p>
             <div className="flex flex-col gap-4">
-                {PROJECT.map((project, index) => 
+                {PROJECTS.map((project, index) => 
                 <Project 
                     key={index}
                     Logo={project.Logo}
@@ -42,11 +42,11 @@ export const Status = () => {
                 />
                 )}
                 </div>
-                //todo add cv to download
+                {/* todo add cv to download */}
                 <p className="flex justify-end text-muted-foreground text-primary">Mon CV par ici...</p>
             </Card>
             <Card className="p-4 flex-1 w-full">
-                //todo add contact form
+                {/* todo add contact form */}
                 <p className="text-lg text-muted-foreground">Me contacter</p>
             </Card>
 
@@ -54,7 +54,7 @@ export const Status = () => {
     </Section>
 };
 
-const PROJECT = [
+const PROJECTS: ProjectProps[] = [
     {
         Logo: Beer,
         title: "O'MyBeer",
@@ -63,7 +63,7 @@ const PROJECT = [
         techno: [SiSass, FaBootstrap, SiJavascript, FaPhp, SiSymfony, SiMysql]
     },
     {
-        Logo: Beer,
+        Logo: MessageSquareHeart,
         title: "MaReco",
         description: "MaReco permet de partager ses recommendations culturelles toutes les semaines à ses amis. En cours de développement...", 
         url: "/",
@@ -99,7 +99,7 @@ const iconNames = {
     RiNextjsFill: "Next.js"
 };
 
-type ProjetProps = {
+type ProjectProps = {
     Logo: LucideIcon;
     title: string;
     description: string;
@@ -108,11 +108,11 @@ type ProjetProps = {
 };
 
 const Project = (props :
-    ProjetProps) => {
+    ProjectProps) => {
     return <div className="flex-col gap-4">
                 <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-color p-1 justify-between" target="alt">
                     <div className="flex items-center gap-4">
-                        <span className="bg-accent text-accent-foreground p-3 rounded-sm">
+                        <span className="bg-accent text-accent-foreground p-3 rounded-md">
                             <props.Logo size={16} />
                         </span>
                         <p className="text-lg font-semibold">{props.title}</p>
@@ -134,7 +134,7 @@ const Project = (props :
             </div>
 };
 
-const EXPERIENCE = [
+const EXPERIENCE: ExperienceProps[] = [
     {   
         image:"/logooclock.png",
         imageAlt: "logo O'clock",
@@ -167,7 +167,7 @@ const Experience = (props :
     return <div className="flex-col gap-4">
                 <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-color p-1 justify-between" target="alt">
                     <div className="flex items-center gap-4">
-                        <span className="rounded-sm">
+                        <span className="rounded-md">
                             <Image 
                                 src={props.image} 
                                 width = "30"

@@ -17,7 +17,7 @@ export default function Home() {
 
       <PhotoGrid/>
 
-      <Spacing size="sm"/>
+      <Spacing size="xs"/>
       
       <Status/>
         
