@@ -42,8 +42,11 @@ export const Status = () => {
                 />
                 )}
                 </div>
+                //todo add cv to download
+                <p className="flex justify-end text-muted-foreground text-primary">Mon CV par ici...</p>
             </Card>
             <Card className="p-4 flex-1 w-full">
+                //todo add contact form
                 <p className="text-lg text-muted-foreground">Me contacter</p>
             </Card>
 
@@ -123,7 +126,7 @@ const Project = (props :
                                     className="text-muted-foreground size-6"
                                     role="img" />
                                 );
-                })
+                            })
                         }
                     </div>
                 </Link>
@@ -175,7 +178,6 @@ const Experience = (props :
                         <div className="flex flex-col">
                             <p className="text-lg font-semibold">{props.title}</p>
                             <p className="text-sm text-muted-foreground">{props.date}</p>
-                            
                         </div>
                     </div>
                 </Link>
