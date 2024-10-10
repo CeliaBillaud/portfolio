@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export const Header = () => {
     return(
-        <header className="sticky top-0 py-4 bg-background/75">
+        <header className="sticky top-0 py-4 bg-background/75 z-10">
             <Section className="flex items-center place-content-between">
                 <div className='flex items-center gap-2'>
                     <Avatar>
