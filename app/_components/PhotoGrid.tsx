@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const PhotoGrid = () => {
     return (
-        <div className="max-w-4xl px-4 m-auto grid sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-1 h-[30rem]">
+        <div className="max-w-5xl px-4 m-auto grid sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-1 h-[30rem]">
             <div className="hidden sm:block sm:col-span-1 lg:col-span-1 relative ">
                 <Image
                     src="/interrail2.jpg"
