@@ -46,7 +46,6 @@ export const Status = () => {
                 <p className="flex justify-end text-muted-foreground text-primary">Mon CV par ici...</p>
             </Card>
             <Card className="p-4 flex-1 w-full">
-                {/* todo add contact form */}
                 <p className="text-lg text-muted-foreground">Me contacter</p>
             </Card>
 
@@ -140,8 +139,17 @@ const EXPERIENCE: ExperienceProps[] = [
         imageAlt: "logo O'clock",
         title: "Formation O'clock",
         description: "lorem ipsum dolor sit amet consectetur adipisicing",
-        url: "oclock.io",
+        url: "https://oclock.io/",
         date: "Oct 2023 - Juin 2024", 
+    },
+    {   
+        image:"/profile-pic(8).png",
+        imageAlt: "photo de profil",
+        title: "Photographe et Vidéaste",
+        description: "",
+        //mettre un lien?
+        url: "",
+        date: "2021-2023", 
     },
     {   
         image:"/logoiae.png",
