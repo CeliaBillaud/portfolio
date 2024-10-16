@@ -51,19 +51,17 @@ export const Status = () => {
                     name="Célia Billaud"
                     image="/profile-pic(8).png"
                     mediumImage="https://img.freepik.com/vecteurs-premium/linkedin-logo_578229-227.jpg"
-                    description="Envoyez-moi un message !"
+                    description="Connectons-nous sur LinkedIn !"
                     url="https://www.linkedin.com/in/celiabillaud/"
                 />
                 <ContactCard 
                     name="Célia Billaud"
                     image="/profile-pic(8).png"
-                    mediumImage=""
+                    mediumImage="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png"
                     description="Envoyez-moi un mail !"
                     url="mailto:celiabillaud.dev@gmail.com"
                 />
-
             </Card>
-
         </div>
     </Section>
 };
@@ -76,19 +74,19 @@ export const Status = () => {
     description: string;
     }) => {
         return(
-            <Card className="p-3 bg-accent/10 flex gap-6 items-center">
+            <Link href={props.url} target="alt" className="">
+            <Card className="p-3 bg-accent/10 flex gap-6 items-center hover:bg-accent/50 transition-color">
                     <div className="relative">
                         <img src={props.image} alt={props.name}  className="w-10 h-10"/>
                         <img src={props.mediumImage} alt={props.name}  className="w-4 h-4 absolute -bottom-1 -right-1 rounded-sm"/>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col w-3/5">
                         <p className="text-lg font-semibold">{props.name}</p>
                         <p className="text-sm text-muted-foreground">{props.description}</p>
                     </div>
-                    <Link href={props.url} target="alt">
-                        <ArrowUpRight size={16}/>
-                    </Link>
+                        <ArrowUpRight size={20}/>
             </Card>
+            </Link>
         )
     }
 
@@ -191,7 +189,7 @@ const EXPERIENCE: ExperienceProps[] = [
         image:"/logooclock.png",
         imageAlt: "logo O'clock",
         title: "Formation O'clock",
-        description: "lorem ipsum dolor sit amet consectetur adipisicing",
+        description: "lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur adipisicing",
         url: "https://oclock.io/",
         date: "Oct 2023 - Juin 2024", 
     },
@@ -199,7 +197,7 @@ const EXPERIENCE: ExperienceProps[] = [
         image:"/profile-pic(8).png",
         imageAlt: "photo de profil",
         title: "Photographe et Vidéaste",
-        //mettre un lien?
+        //todo mettre un lien?
         url: "",
         date: "2021-2023", 
     },
