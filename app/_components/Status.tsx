@@ -75,7 +75,7 @@ export const Status = () => {
     }) => {
         return(
             <Link href={props.url} target="alt" className="">
-            <Card className="p-3 bg-accent/10 flex gap-6 items-center hover:bg-accent/50 transition-color">
+            <Card className="p-3 bg-accent/10 flex gap-6 items-center hover:bg-accent/30 transition-colors group">
                     <div className="relative">
                         <img src={props.image} alt={props.name}  className="w-10 h-10"/>
                         <img src={props.mediumImage} alt={props.name}  className="w-4 h-4 absolute -bottom-1 -right-1 rounded-sm"/>
@@ -84,7 +84,8 @@ export const Status = () => {
                         <p className="text-lg font-semibold">{props.name}</p>
                         <p className="text-sm text-muted-foreground">{props.description}</p>
                     </div>
-                        <ArrowUpRight size={20}/>
+                    <ArrowUpRight size={20} className="opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in-out"
+                    />
             </Card>
             </Link>
         )
@@ -148,25 +149,13 @@ type ProjectProps = {
 const Project = (props :
     ProjectProps) => {
     return <div className="flex-col gap-4">
-                <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-color p-1 justify-between" target="alt">
+                <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-colors p-1 justify-between" target="alt">
                     <div className="flex items-center gap-4">
                         <span className="bg-accent text-accent-foreground p-3 rounded-md">
                             <props.Logo size={16} />
                         </span>
                         <p className="text-lg font-semibold">{props.title}</p>
                     </div>
-                    {/* <div className="flex gap-2">
-                        {props.techno.map((Icon, index) => {
-                            //todo add title on hover
-                            return (
-                                <Icon 
-                                    key={index} 
-                                    className="text-muted-foreground size-6"
-                                    role="img" />
-                                );
-                            })
-                        }
-                    </div> */}
                 </Link>
                 <p className="text-sm text-muted-foreground p-1">{props.description}</p>
                 <div className="flex gap-2 justify-end">
@@ -222,7 +211,7 @@ type ExperienceProps = {
 const Experience = (props :
     ExperienceProps) => {
     return <div className="flex-col gap-4">
-                <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-color p-1 justify-between" target="alt">
+                <Link href={props.url} className="flex items-center  hover:bg-accent/50 transition-colors p-1 justify-between" target="alt">
                     <div className="flex items-center gap-4">
                         <span className="rounded-md">
                             <Image 
