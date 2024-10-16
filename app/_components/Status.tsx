@@ -11,9 +11,9 @@ import Image from 'next/image';
 
 export const Status = () => {
     return <Section className="flex max-sm:flex-col items-start gap-4">
-        <Card className="p-4 flex flex-col gap-2 w-full lg:w-1/2">
+        <Card className="flex-[4] p-4 flex flex-col gap-2 w-full lg:w-1/2">
             <p className="text-lg text-muted-foreground">Mes projets préférés</p>
-            <div className="flex flex-col gap-4">
+            <div className="flex-[2] flex flex-col gap-4">
                 {PROJECTS.map((project, index) => 
                 <Project 
                     key={index}
@@ -26,10 +26,10 @@ export const Status = () => {
                 )}
             </div>    
         </Card>
-        <div className="flex flex-col gap-4 w-full lg:w-1/2">
+        <div className="flex-[3] flex flex-col gap-4 w-full lg:w-1/2">
             <Card className="p-4 flex-1 w-full">
                 <p className="text-lg text-muted-foreground">Mon parcours</p>
-                <div className="flex flex-col gap-4">
+                <div className=" flex flex-col gap-4">
                 {EXPERIENCE.map((experience, index) => 
                 <Experience 
                     key={index}
@@ -45,7 +45,7 @@ export const Status = () => {
                 {/* todo add cv to download */}
                 <p className="flex justify-end text-muted-foreground text-primary">Mon CV par ici...</p>
             </Card>
-            <Card className="p-4 flex-1 w-full">
+            <Card className="p-4 flex-1 w-full flex flex-col gap-2">
                 <p className="text-lg text-muted-foreground">Me contacter</p>
                 <ContactCard 
                     name="Célia Billaud"
@@ -76,7 +76,7 @@ export const Status = () => {
     description: string;
     }) => {
         return(
-            <Card className="p-3 bg-accent/10 flex gap-4">
+            <Card className="p-3 bg-accent/10 flex gap-6 items-center">
                     <div className="relative">
                         <img src={props.image} alt={props.name}  className="w-10 h-10"/>
                         <img src={props.mediumImage} alt={props.name}  className="w-4 h-4 absolute -bottom-1 -right-1 rounded-sm"/>
@@ -104,6 +104,7 @@ const PROJECTS: ProjectProps[] = [
         Logo: MessageSquareHeart,
         title: "MaReco",
         description: "MaReco permet de partager ses recommendations culturelles toutes les semaines à ses amis. En cours de développement...", 
+        //todo add link to githubrepo
         url: "/",
         techno: [SiTailwindcss, FaReact, FaPhp, SiSymfony, SiMysql]
     },
@@ -111,6 +112,7 @@ const PROJECTS: ProjectProps[] = [
         Logo: BriefcaseBusiness,
         title: "Mon Portfolio",
         description: "Ce projet de portfolio m'a permis de découvrir et m'amuser avec Next.js, React, Typescript et Tailwind CSS !", 
+        //todo add link when deployed
         url: "/",
         techno: [RiNextjsFill, FaReact, SiTypescript, SiTailwindcss ]
     },
@@ -197,7 +199,6 @@ const EXPERIENCE: ExperienceProps[] = [
         image:"/profile-pic(8).png",
         imageAlt: "photo de profil",
         title: "Photographe et Vidéaste",
-        description: "",
         //mettre un lien?
         url: "",
         date: "2021-2023", 
@@ -206,7 +207,6 @@ const EXPERIENCE: ExperienceProps[] = [
         image:"/logoiae.png",
         imageAlt: "logo IAE Aix",
         title: "Msc International Finance",
-        description: " Formation BAC+5 en finance spécialisée en finance internationale",
         url: "oclock.io",
         date: "2020", 
     },
@@ -216,7 +216,7 @@ type ExperienceProps = {
     image: string;
     imageAlt: string;
     title: string;
-    description: string;
+    description?: string | null;
     url: string;
     date: string;
 };
@@ -240,6 +240,9 @@ const Experience = (props :
                         </div>
                     </div>
                 </Link>
-                <p className="text-sm text-muted-foreground p-1">{props.description}</p>
+                {
+                    props.description && 
+                    <p className="text-sm text-muted-foreground p-1">{props.description}</p>
+                }
             </div>
 }
