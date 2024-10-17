@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 
 export const Status = () => {
-    return <Section className="flex max-sm:flex-col items-start gap-4">
+    return <Section className="flex max-md:flex-col items-start gap-4">
         <Card className="flex-[4] p-4 flex flex-col gap-2 w-full lg:w-1/2">
             <p className="text-lg text-muted-foreground">Mes projets préférés</p>
             <div className="flex-[2] flex flex-col gap-4">
