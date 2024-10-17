@@ -27,12 +27,16 @@ export const Header = () => {
                         <ul className="flex items-center gap-2">
                             <Link 
                                 href="https://github.com/CeliaBillaud"
-                                className={cn(buttonVariants({ variant: "outline"}),"size-6 p-0")} >                                
+                                className={cn(buttonVariants({ variant: "outline"}),"size-8 p-0")}
+                                target='alt'
+                                >                                
                                     <GitHubLogoIcon/>
                             </Link>
                             <Link 
                                 href="https://www.linkedin.com/in/celiabillaud/"
-                                className={cn(buttonVariants({ variant: "outline"}),"size-6 p-0")} >                                
+                                className={cn(buttonVariants({ variant: "outline"}),"size-8 p-0")} 
+                                target='alt'
+                                >                                
                                     <LinkedInLogoIcon/>
                             </Link>
                             

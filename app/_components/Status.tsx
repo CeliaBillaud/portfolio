@@ -55,7 +55,7 @@ export const Status = () => {
                     url="https://www.linkedin.com/in/celiabillaud/"
                 />
                 <ContactCard 
-                    name="Célia Billaud"
+                    name="celabillaud.dev@gmail.com"
                     image="/profile-pic(8).png"
                     mediumImage="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png"
                     description="Envoyez-moi un mail !"
@@ -80,8 +80,8 @@ export const Status = () => {
                         <img src={props.image} alt={props.name}  className="w-10 h-10"/>
                         <img src={props.mediumImage} alt={props.name}  className="w-4 h-4 absolute -bottom-1 -right-1 rounded-sm"/>
                     </div>
-                    <div className="flex flex-col w-3/5">
-                        <p className="text-lg font-semibold">{props.name}</p>
+                    <div className="flex flex-col max-w-3/5">
+                        <p className="text-sm font-semibold">{props.name}</p>
                         <p className="text-sm text-muted-foreground">{props.description}</p>
                     </div>
                     <ArrowUpRight size={20} className="opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in-out"
