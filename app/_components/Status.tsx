@@ -4,9 +4,10 @@ import {Home, LucideIcon, Beer, BriefcaseBusiness, Trophy, MessageSquareHeart, A
 import Link from "next/link"
 import { IconType } from 'react-icons'
 import { FaPhp, FaBootstrap, FaReact, FaCss3Alt } from 'react-icons/fa'
-import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTypescript, SiTailwindcss, SiLaravel } from 'react-icons/si'
 import { RiNextjsFill } from "react-icons/ri";
 import Image from 'next/image';
+
 
 
 export const Status = () => {
@@ -43,7 +44,7 @@ export const Status = () => {
                 )}
                 </div>
                 {/* todo add cv to download */}
-                <p className="flex justify-end text-muted-foreground text-primary">Mon CV par ici...</p>
+                <Link href="/cv-celiabillaud.pdf" target="_blank" className="flex mt-1 justify-end text-muted-foreground opacity-75 hover:opacity-100">Mon CV complet par ici !</Link>
             </Card>
             <Card className="p-4 flex-1 w-full flex flex-col gap-2">
                 <p className="text-lg text-muted-foreground">Me contacter</p>
@@ -97,7 +98,7 @@ const PROJECTS: ProjectProps[] = [
         title: "O'MyBeer",
         description: "O’MyBeer est une application dédiée à l'univers de la bière, qui permet aux utilisateurs d’explorer une vaste sélection de bières et de marques du monde entier.", 
         url: "https://www.omybeer.ovh/",
-        techno: [SiSass, FaBootstrap, SiJavascript, FaPhp, SiSymfony, SiMysql]
+        techno: [FaPhp, SiSymfony, SiMysql, SiSass, FaBootstrap, SiJavascript]
     },
     {
         Logo: MessageSquareHeart,
@@ -105,7 +106,7 @@ const PROJECTS: ProjectProps[] = [
         description: "MaReco permet de partager ses recommendations culturelles toutes les semaines à ses amis. En cours de développement...", 
         //todo add link to githubrepo
         url: "/",
-        techno: [SiTailwindcss, FaReact, FaPhp, SiSymfony, SiMysql]
+        techno: [FaPhp, SiLaravel, SiMysql, SiTailwindcss, FaReact]
     },
     {
         Logo: BriefcaseBusiness,
@@ -113,7 +114,7 @@ const PROJECTS: ProjectProps[] = [
         description: "Ce projet de portfolio m'a permis de découvrir et m'amuser avec Next.js, React, Typescript et Tailwind CSS !", 
         //todo add link when deployed
         url: "/",
-        techno: [RiNextjsFill, FaReact, SiTypescript, SiTailwindcss ]
+        techno: [RiNextjsFill, SiTailwindcss ]
     },
     {
         Logo: Trophy,
@@ -178,7 +179,7 @@ const EXPERIENCE: ExperienceProps[] = [
         image:"/logooclock.png",
         imageAlt: "logo O'clock",
         title: "Formation O'clock",
-        description: "lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur adipisicing",
+        description: "Titre Professionnel Développeur web et web mobile soutenu à l'aide de mon projet de fin de formation O'MyBeer. Titre équivalent Bac+2, inscrit au RNCP.",
         url: "https://oclock.io/",
         date: "Oct 2023 - Juin 2024", 
     },

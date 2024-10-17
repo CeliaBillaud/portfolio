@@ -23,7 +23,7 @@ export const Hero = () => {
             <h2 className="text-3xl font-caption">Votre future alternante ?</h2>
             <div>
                 <p className="text-base md:text-justify">
-                    J'aime créer des projets en <Code icon={FaPhp}>PHP</Code><Code icon={SiSymfony}>Symfony</Code> et je me forme au monde merveilleux de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>
+                    Diplômée d'une formation spécialisée en <Code icon={FaPhp}>PHP</Code> et <Code icon={SiSymfony}>Symfony</Code>, je me forme au monde merveilleux de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>
                 </p>
                 <p className="text-base md:text-justify">
                     Ancienne étudiante en Finance Internationale et vidéaste, attirée par la résolution de problèmes et la création, je me suis lancée dans le développement web avec l'
