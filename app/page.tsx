@@ -23,11 +23,11 @@ export default function Home() {
       
       <Status/>
 
-      <Spacing size="sm"/>  
+      <Spacing size="xs"/>  
 
       <Playlist playlistId="0rst5hKbtLCDSx5Ca3Axvz"/>
 
-      <Spacing size="md"/> 
+      <Spacing size="sm"/> 
 
       <Footer/>
         

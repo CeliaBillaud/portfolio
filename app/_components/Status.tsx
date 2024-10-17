@@ -27,7 +27,7 @@ export const Status = () => {
                 )}
             </div>    
         </Card>
-        <div className="flex-[3] flex flex-col gap-4 w-full lg:w-1/2">
+        <div className="flex-[3] flex flex-col gap-4 md:gap-2.5 w-full lg:w-1/2">
             <Card className="p-4 flex-1 w-full">
                 <p className="text-lg text-muted-foreground">Mon parcours</p>
                 <div className=" flex flex-col gap-4">
