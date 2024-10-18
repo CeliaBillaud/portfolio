@@ -22,7 +22,7 @@ export const Playlist: React.FC<PlaylistProps> = ({
       width: '100%',
       margin: '0 auto'
     }}>
-        <p className="text-lg text-muted-foreground mb-2">Encore besoin d'être convaincu ?</p>
+        <p className="text-lg text-foreground mb-2">Encore besoin d'être convaincu ?</p>
       <iframe
         style={{
           borderRadius: '12px',
