@@ -1,4 +1,3 @@
-import { Section } from "./Section"
 import Image from "next/image"
 
 export const PhotoGrid = () => {

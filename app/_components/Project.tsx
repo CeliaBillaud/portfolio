@@ -2,7 +2,7 @@ import {LucideIcon, Beer, BriefcaseBusiness, Trophy, MessageSquareHeart} from "l
 import Link from "next/link"
 import { IconType } from 'react-icons'
 import { FaPhp, FaBootstrap, FaReact, FaCss3Alt } from 'react-icons/fa'
-import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTypescript, SiTailwindcss, SiLaravel } from 'react-icons/si'
+import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTailwindcss, SiLaravel } from 'react-icons/si'
 import { RiNextjsFill } from "react-icons/ri";
 
 
@@ -37,19 +37,19 @@ import { RiNextjsFill } from "react-icons/ri";
     }
 ]
 
-const iconNames = { 
-    SiJavascript: "Javascript",
-    SiTypescript: "Typescript", 
-    SiReact: "React",  
-    SiSass: "Sass",
-    SiTailwindcss: "Tailwind CSS",
-    SiMysql: "MySQL",
-    SiSymfony: "Symfony",
-    FaPhp: "PHP",
-    FaBootstrap: "Bootstrap",
-    FaCss3Alt: "CSS",
-    RiNextjsFill: "Next.js"
-};
+// const iconNames = { 
+//     SiJavascript: "Javascript",
+//     SiTypescript: "Typescript", 
+//     SiReact: "React",  
+//     SiSass: "Sass",
+//     SiTailwindcss: "Tailwind CSS",
+//     SiMysql: "MySQL",
+//     SiSymfony: "Symfony",
+//     FaPhp: "PHP",
+//     FaBootstrap: "Bootstrap",
+//     FaCss3Alt: "CSS",
+//     RiNextjsFill: "Next.js"
+// };
 
 type ProjectProps = {
     Logo: LucideIcon;

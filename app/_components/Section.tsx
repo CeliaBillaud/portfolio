@@ -1,6 +1,5 @@
 
 import { cn } from "@/lib/utils"
-import clsx from "clsx"
 import { PropsWithChildren } from "react"
 // define global width of section 
 export const Section= (props: PropsWithChildren<{className?:string}>) => {

@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
 import Link from "next/link"
-import Image from 'next/image';
 import { ContactCard } from "./ContactCard";
 import { Project } from "./Project";
 import { PROJECTS } from "./Project";
@@ -50,14 +49,14 @@ export const Status = () => {
                 <ContactCard 
                     name="Rendez-vous sur LinkedIn !"
                     image="/profile-pic(8).png"
-                    mediumImage="https://img.freepik.com/vecteurs-premium/linkedin-logo_578229-227.jpg"
+                    mediumImage="/linkedin-logo.png"
                     description=""
                     url="https://www.linkedin.com/in/celiabillaud/"
                 />
                 <ContactCard 
                     name="Envoyez-moi un mail !"
                     image="/profile-pic(8).png"
-                    mediumImage="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png"
+                    mediumImage="/gmail-logo.png"
                     description=""
                     url="mailto:celiabillaud.dev@gmail.com"
                 />
