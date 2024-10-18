@@ -27,7 +27,7 @@ export default function Home() {
 
       <Playlist playlistId="0rst5hKbtLCDSx5Ca3Axvz"/>
 
-      <Spacing size="sm"/> 
+      <Spacing size="xs"/> 
 
       <Footer/>
         

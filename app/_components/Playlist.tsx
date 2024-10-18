@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 interface PlaylistProps {
   playlistId: string;
@@ -22,20 +29,27 @@ export const Playlist: React.FC<PlaylistProps> = ({
       width: '100%',
       margin: '0 auto'
     }}>
-        <p className="text-lg text-foreground mb-2">Encore besoin d'être convaincu ?</p>
-      <iframe
-        style={{
-          borderRadius: '12px',
-          border: 'none',
-          width: '100%',
-          height: typeof height === 'number' ? `${height}px` : height
-        }}
-        src={playlistUrl}
-        allowFullScreen
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-        title="Spotify Playlist Embed"
-      />
+  
+      <Accordion type="single" collapsible>
+        <AccordionItem value="item-1">
+          <AccordionTrigger className="text-md text-muted-foreground">Encore besoin d'être convaincu.e ?</AccordionTrigger>
+          <AccordionContent>
+          <iframe
+            style={{
+              borderRadius: '12px',
+              border: 'none',
+              width: '100%',
+              height: typeof height === 'number' ? `${height}px` : height
+            }}
+            src={playlistUrl}
+            allowFullScreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Spotify Playlist Embed"
+          />
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
     </div>
   );
 };
