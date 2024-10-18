@@ -22,7 +22,7 @@ export const EXPERIENCE: ExperienceProps[] = [
         image:"/logoiae.png",
         imageAlt: "logo IAE Aix",
         title: "Msc International Finance",
-        url: "oclock.io",
+        url: "https://iae-aix.univ-amu.fr/en/programs/organization-msc/msc2/msc-2-management-specialite-international-finance",
         date: "2020", 
     },
 ]
