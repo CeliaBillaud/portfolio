@@ -48,17 +48,17 @@ export const Status = () => {
             <Card className="p-4 flex-1 w-full flex flex-col gap-2">
                 <p className="text-lg text-muted-foreground">Me contacter</p>
                 <ContactCard 
-                    name="Célia Billaud"
+                    name="Rendez-vous sur LinkedIn !"
                     image="/profile-pic(8).png"
                     mediumImage="https://img.freepik.com/vecteurs-premium/linkedin-logo_578229-227.jpg"
-                    description="Connectons-nous sur LinkedIn !"
+                    description=""
                     url="https://www.linkedin.com/in/celiabillaud/"
                 />
                 <ContactCard 
-                    name="celabillaud.dev@gmail.com"
+                    name="Envoyez-moi un mail !"
                     image="/profile-pic(8).png"
                     mediumImage="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png"
-                    description="Envoyez-moi un mail !"
+                    description=""
                     url="mailto:celiabillaud.dev@gmail.com"
                 />
             </Card>
