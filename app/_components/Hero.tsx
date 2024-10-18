@@ -34,7 +34,7 @@ export const Hero = () => {
                         className="mr-1"
                         priority
                         />
-                        École O'clock
+                        École O&apos;clock
                     </Code>
                     </Link>
                     . Attirée par la résolution de problèmes et la création, j&apos;ai trouvé dans le code une nouvelle passion !
