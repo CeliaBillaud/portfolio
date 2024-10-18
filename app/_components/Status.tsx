@@ -43,7 +43,6 @@ export const Status = () => {
                 />
                 )}
                 </div>
-                {/* todo add cv to download */}
                 <Link href="/cv-celiabillaud.pdf" target="_blank" className="flex mt-1 justify-end text-muted-foreground opacity-75 hover:opacity-100">Mon CV complet ici !</Link>
             </Card>
             <Card className="p-4 flex-1 w-full flex flex-col gap-2">

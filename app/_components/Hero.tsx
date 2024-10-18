@@ -23,31 +23,32 @@ export const Hero = () => {
             <h2 className="text-3xl font-caption">Votre future alternante ?</h2>
             <div>
                 <p className="text-base md:text-justify">
-                    Diplômée d'une formation spécialisée en <Code icon={FaPhp}>PHP</Code> et <Code icon={SiSymfony}>Symfony</Code>, je me forme au monde merveilleux de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>
-                </p>
-                <p className="text-base md:text-justify">
-                    Ancienne étudiante en Finance Internationale et vidéaste, attirée par la résolution de problèmes et la création, je me suis lancée dans le développement web avec l'
+                    Après un Master en Finance Internationale et une carrière de vidéaste, je me suis lancée dans le développement web avec l'
                     <Link href="https://oclock.io/" target="_blank">
-                        <Code> 
-                                <Image 
-                                src="/logooclock.png" 
-                                width = {20}
-                                height = {20}
-                                alt="logo O'clock" 
-                                className="mr-1"
-                                priority
-                                />
-                                
+                    <Code>
+                        <Image
+                        src="/logooclock.png"
+                        width={20}
+                        height={20}
+                        alt="logo O'clock"
+                        className="mr-1"
+                        priority
+                        />
                         École O'clock
-                        </Code>.
+                    </Code>
                     </Link>
+                    . Attirée par la résolution de problèmes et la création, j'ai trouvé dans le code une nouvelle passion !
                 </p>
                 <p className="text-base md:text-justify">
-                    Je recherche une <strong>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d'Applications.
+                    Diplômée d'une formation spécialisée en <Code icon={FaPhp}>PHP</Code> et <Code icon={SiSymfony}>Symfony</Code>,
+                    je me forme actuellement au monde dynamique de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>. 
+                    Avec une documentation à portée de main, je suis prête à relever tous les défis !
                 </p>
-                {/* <p className="text-base md:text-justify">
-                    Passionnée, créative, toujours en quête d'apprentissage !
-                </p> */}
+               
+                <p className="text-base md:text-justify mt-1">
+                    Je recherche une <strong>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d'Applications afin d'approfondir mes compétences et de me lancer pleinement dans cette nouvelle carrière passionnante.
+                </p>
+                
             </div>
         </Section>
     );
