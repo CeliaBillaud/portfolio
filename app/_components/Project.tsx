@@ -5,34 +5,33 @@ import { FaPhp, FaBootstrap, FaReact, FaCss3Alt } from 'react-icons/fa'
 import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTypescript, SiTailwindcss, SiLaravel } from 'react-icons/si'
 import { RiNextjsFill } from "react-icons/ri";
 
-export const PROJECTS: ProjectProps[] = [
+
+    export const PROJECTS: ProjectProps[] = [
     {
         Logo: Beer,
         title: "O'MyBeer",
-        description: "O’MyBeer est une application dédiée à l'univers de la bière, qui permet aux utilisateurs d’explorer une vaste sélection de bières et de marques du monde entier.", 
+        description: "Application web dédiée à l'univers de la bière, permettant aux utilisateurs d'explorer une vaste sélection de bières et de marques internationales.",
         url: "https://www.omybeer.ovh/",
         techno: [FaPhp, SiSymfony, SiMysql, SiSass, FaBootstrap, SiJavascript]
     },
     {
         Logo: MessageSquareHeart,
         title: "MaReco",
-        description: "MaReco permet de partager ses recommendations culturelles toutes les semaines à ses amis. En cours de développement...", 
-        //todo add link to githubrepo
+        description: "Plateforme sociale facilitant le partage hebdomadaire de recommandations culturelles entre amis. En développement.",
         url: "/",
         techno: [FaPhp, SiLaravel, SiMysql, SiTailwindcss, FaReact]
     },
     {
         Logo: BriefcaseBusiness,
         title: "Mon Portfolio",
-        description: "Ce projet de portfolio m'a permis de découvrir et m'amuser avec Next.js, React, Typescript et Tailwind CSS !", 
-        //todo add link when deployed
+        description: "Vitrine digitale de mes compétences m'ayant permis de découvrir Next.js, React, Typescript et Tailwind CSS.",
         url: "/",
-        techno: [RiNextjsFill, SiTailwindcss ]
+        techno: [RiNextjsFill, SiTailwindcss]
     },
     {
         Logo: Trophy,
-        title: "Rubgy Quizz",
-        description: "Un quizz sur les joueurs du XV de France, je m'étais mis le challenge de le réaliser en 2 jours avec seulement des technos de base.", 
+        title: "Rugby Quizz",
+        description: "Quizz interactif sur le XV de France, démontrant ma capacité à créer des applications web simples avec des technologies de base.",
         url: "https://celiabillaud.github.io/rugby-quizz/",
         techno: [FaCss3Alt, SiJavascript]
     }
