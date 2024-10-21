@@ -23,6 +23,17 @@ const anekTelugu = Anek_Telugu({
 export const metadata: Metadata = {
   title: "Célia Billaud • Développeuse Web",
   description: "Développeuse web joyeuse et dynamique, passionnée par Symfony et React, à la recherche d'une alternance pour créer des expériences web innovantes.",
+  openGraph: {
+    description:"Développeuse web joyeuse et dynamique, passionnée par Symfony et React, à la recherche d'une alternance pour créer des expériences web innovantes.",
+    images: [
+      {
+        url: "/profile-pic(8).png",
+        width: 1200,
+        height: 630,
+        alt: "Célia Billaud • Développeuse Web",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
