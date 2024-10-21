@@ -23,7 +23,7 @@ export const PhotoGrid = () => {
             </div>
             <div className="hidden lg:block lg:col-span-1 lg:row-span-2 relative">
                 <Image
-                    src="/skate1.jpg"
+                    src="/skate.jpg"
                     alt="Célia fait du skate"
                     fill
                     style={{ objectFit: 'cover' }}
