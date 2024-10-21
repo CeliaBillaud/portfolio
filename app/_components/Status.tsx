@@ -7,7 +7,7 @@ import { PROJECTS } from "./Project";
 import { EXPERIENCE } from "./Experience";
 import { Experience } from "./Experience";
 
-
+const cvPath = "/cv-celiabillaud.pdf";
 
 export const Status = () => {
     return <Section className="flex max-md:flex-col items-start gap-4">
@@ -42,7 +42,7 @@ export const Status = () => {
                 />
                 )}
                 </div>
-                <Link href="/cv-celiabillaud.pdf" target="_blank" className="flex mt-1 justify-end text-muted-foreground opacity-75 hover:opacity-100">Mon CV complet ici !</Link>
+                <Link href={cvPath} target="_blank" className="flex mt-1 justify-end text-muted-foreground opacity-75 hover:opacity-100">Mon CV complet ici !</Link>
             </Card>
             <Card className="p-4 flex-1 w-full flex flex-col gap-2">
                 <p className="text-lg text-muted-foreground">Me contacter</p>
