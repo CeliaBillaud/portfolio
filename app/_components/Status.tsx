@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
-import Link from "next/link"
 import { ContactCard } from "./ContactCard";
 import { Project } from "./Project";
 import { PROJECTS } from "./Project";
