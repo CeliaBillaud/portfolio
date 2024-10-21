@@ -19,10 +19,10 @@ const Code = ({ className, children, icon: Icon, ...props }: ComponentPropsWithR
 export const Hero = () => {
     return (
         <Section className='flex flex-col gap-2'>
-            <h1 className="text-5xl text-primary font-bold font-caption">Célia Billaud • Développeuse web</h1>
-            <h2 className="text-3xl font-caption">Votre future alternante ?</h2>
+            <h1 className="text-3xl md:text-5xl text-primary font-bold font-caption">Célia Billaud • Développeuse web</h1>
+            <h2 className="text-xl md:text-3xl font-caption">Votre future alternante ?</h2>
             <div>
-                <p className="text-base md:text-justify">
+                <p className="text-base hidden md:block md:text-justify">
                     Après un Master en Finance Internationale et une carrière de vidéaste, je me suis lancée dans le développement web avec l&apos;
                     <Link href="https://oclock.io/" target="_blank">
                     <Code>
@@ -39,15 +39,20 @@ export const Hero = () => {
                     </Link>
                     . Attirée par la résolution de problèmes et la création, j&apos;ai trouvé dans le code une nouvelle passion !
                 </p>
+
                 <p className="text-base md:text-justify">
                     Diplômée d&apos;une formation spécialisée en <Code icon={FaPhp}>PHP</Code> et <Code icon={SiSymfony}>Symfony</Code>,
-                    je me forme actuellement au monde dynamique de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>. 
+                    je me forme actuellement au monde dynamique de <Code icon={FaReact}>React</Code> et <Code icon={SiNextdotjs}>Next.js</Code>. <br />
                     Avec une documentation à portée de main, je suis prête à relever tous les défis !
                 </p>
-               
-                <p className="text-base md:text-justify mt-1">
-                    Je recherche une <strong>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d&apos;Applications afin d&apos;approfondir mes compétences et de me lancer pleinement dans cette nouvelle carrière passionnante.
+
+                <p className="text-base md:hidden md:text-justify mt-1">
+                    Je recherche une <strong className='text-primary'>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d&apos;Applications.
                 </p>
+               
+                <p className="text-base hidden md:block md:text-justify mt-1">
+                    Je recherche une <strong className='text-primary'>alternance de 20 mois</strong> pour devenir Conceptrice Développeuse d&apos;Applications afin d&apos;approfondir mes compétences et de me lancer pleinement dans cette nouvelle carrière passionnante.
+                </p> 
                 
             </div>
         </Section>
