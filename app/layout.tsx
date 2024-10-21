@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Anek_Telugu } from 'next/font/google';
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,6 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${anekTelugu.variable}  antialiased h-full bg-background text-foreground`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
