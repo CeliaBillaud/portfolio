@@ -11,7 +11,7 @@ export const EXPERIENCE: ExperienceProps[] = [
         date: "Oct 2023 - Juin 2024", 
     },
     {   
-        image:"/profile-pic(8).png",
+        image:"/photo.jpg",
         imageAlt: "photo de profil",
         title: "Photographe et Vidéaste",
         //todo mettre un lien?
@@ -44,9 +44,10 @@ export const Experience = (props :
                         <span className="rounded-md">
                             <Image 
                                 src={props.image} 
-                                width = "30"
-                                height = "30"
+                                width = "35"
+                                height = "35"
                                 alt={props.imageAlt}
+                                className="rounded-md"
                                 />
                         </span>
                         <div className="flex flex-col">
