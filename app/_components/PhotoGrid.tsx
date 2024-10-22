@@ -10,6 +10,7 @@ export const PhotoGrid = () => {
                     fill
                     style={{ objectFit: 'cover' }}
                     className="rounded-lg"
+                    priority
                 />
             </div>
             <div className="col-span-1 lg:col-span-1 lg:row-span-2 relative">
@@ -19,6 +20,7 @@ export const PhotoGrid = () => {
                     fill
                     style={{ objectFit: 'cover' }}
                     className="rounded-lg"
+                    priority
                 />
             </div>
             <div className="hidden lg:block lg:col-span-1 lg:row-span-2 relative">
