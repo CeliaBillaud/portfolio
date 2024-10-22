@@ -24,7 +24,7 @@ export const Header = () => {
                 <div className="flex items-end">
                 {/* copy components from shadcn/ui */}
                     <nav>
-                        <ul className="flex items-center gap-2">
+                        < div className="flex items-center gap-2">
                             <Link 
                                 href="https://github.com/CeliaBillaud"
                                 className={cn(buttonVariants({ variant: "outline"}),"size-8 p-0")}
@@ -40,7 +40,7 @@ export const Header = () => {
                                     <LinkedInLogoIcon/>
                             </Link>
                             
-                        </ul>
+                        </div>
                     </nav>
                 </div>
             </Section>
