@@ -18,7 +18,7 @@ export const Header = () => {
                     <Link 
                         href="/"
                         className="text-lg font-bold text-foreground">
-                        Hello !
+                        &#123; helloworld 👋 &#125;
                     </Link>
                 </div>
                 <div className="flex items-end">

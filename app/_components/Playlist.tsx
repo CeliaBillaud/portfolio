@@ -32,7 +32,7 @@ export const Playlist: React.FC<PlaylistProps> = ({
   
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger className="text-md text-muted-foreground">Encore besoin d&apos;être convaincu.e ?</AccordionTrigger>
+          <AccordionTrigger className="text-md text-muted-foreground">Encore besoin d&apos;être convaincu.e ? 🤔</AccordionTrigger>
           <AccordionContent>
           <iframe
             style={{

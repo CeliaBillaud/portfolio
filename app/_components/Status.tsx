@@ -39,12 +39,12 @@ export const Status = () => {
                 />
                 )}
                 </div>
-                <a href="/cv-celiabillaud.pdf" target="_blank" rel="noopener noreferrer" className="flex mt-1 justify-end text-muted-foreground opacity-75 hover:opacity-100">
+                <a href="/cv-celiabillaud.pdf" target="_blank" rel="noopener noreferrer" className="flex mt-1 justify-end text-muted-foreground hover:underline">
                 Mon CV complet ici !
                 </a> 
             </Card>
             <Card className="p-4 flex-1 w-full flex flex-col gap-2">
-                <p className="text-lg text-muted-foreground">Me contacter</p>
+                <p className="text-lg text-muted-foreground">On en discute ?</p>
                 <ContactCard 
                     name="Rendez-vous sur LinkedIn !"
                     image="/profile-pic(8).png"
