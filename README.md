@@ -6,7 +6,6 @@ A modern, responsive portfolio website built with Next.js, showcasing my work an
 
 - Responsive design that works on desktop and mobile
 - Server-side rendering for optimal performance
-- Dynamic project showcase
 - Clean and modern UI
 - Fast performance
 - SEO optimized
