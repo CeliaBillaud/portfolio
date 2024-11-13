@@ -18,7 +18,7 @@ import { RiNextjsFill } from "react-icons/ri";
         Logo: MessageSquareHeart,
         title: "MaReco",
         description: "Plateforme sociale facilitant le partage hebdomadaire de recommandations culturelles entre amis. En développement.",
-        url: "/",
+        url: "https://github.com/CeliaBillaud/mareco",
         techno: [FaPhp, SiLaravel, SiMysql, SiTailwindcss, FaReact]
     },
     {
