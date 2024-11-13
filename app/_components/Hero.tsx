@@ -27,7 +27,7 @@ export const Hero = () => {
                 </p>
                 <p className="text-base hidden md:block md:text-justify">
                     Fan de défis et toujours enthousiaste, j&apos;ai troqué mon Master en Finance Internationale et mon ancien job de vidéaste pour me lancer dans l&apos;aventure dev web avec l&apos;
-                    <Link href="https://oclock.io/" target="_blank">
+                    <Link href="https://oclock.io/formations/cda-alternance?_gl=1*s7rr7j*_up*MQ..&gclid=CjwKCAiAudG5BhAREiwAWMlSjEVhdmM3Y0HFEaJ7LwlgWSGyutiMBi1q4_Eo0Pb67pacwRh2wQr4CBoCUfYQAvD_BwE" target="_blank">
                         <Code>
                             <Image
                                 src="/logooclock.png"
