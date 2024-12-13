@@ -3,7 +3,7 @@ import { Section } from "./Section"
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 
 export const Header = () => {
@@ -24,7 +24,8 @@ export const Header = () => {
                 <div className="flex items-end">
                 {/* copy components from shadcn/ui */}
                     <nav>
-                        < div className="flex items-center gap-2">
+                        < div className="flex flex-wrap justify-end items-center gap-2">
+                            
                             <Link 
                                 href="https://github.com/CeliaBillaud"
                                 className={cn(buttonVariants({ variant: "outline"}),"size-8 p-0")}
@@ -38,6 +39,11 @@ export const Header = () => {
                                 target='alt'
                                 >                                
                                     <LinkedInLogoIcon/>
+                            </Link>
+                            <Link 
+                                href={"/cv-celiabillaud.pdf"}
+                                target="_blank"
+                                className={cn(buttonVariants({ variant: "outline" }),"hidden sm:block")}>Mon CV 📄
                             </Link>
                             
                         </div>
