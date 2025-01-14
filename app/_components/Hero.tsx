@@ -49,13 +49,13 @@ export const Hero = () => {
                     La nouveauté ? Même pas peur ! Avec une bonne doc et ma motivation sans faille, je transforme chaque obstacle en opportunité d&apos;apprentissage.
                 </p>
 
-                <p className="text-base md:hidden md:text-justify mt-1">
+                {/* <p className="text-base md:hidden md:text-justify mt-1">
                     Je recherche une <strong className='text-primary'>alternance de 20 mois</strong> en Conception et Développement d&apos;Applications &#40;formation Bac+3&#41;, je suis ultra motivée à rejoindre une équipe qui allie travail de qualité et bonne ambiance !
                 </p>
                         
                 <p className="text-base hidden md:block md:text-justify mt-1">
                     Je recherche une <strong className='text-primary'>alternance de 20 mois</strong> en Conception et Développement d&apos;Applications &#40;formation Bac+3&#41;, je suis ultra motivée à rejoindre une équipe qui allie travail de qualité et bonne ambiance ! 
-                </p> 
+                </p>  */}
             </div>
         </Section>
     );
