@@ -19,7 +19,7 @@ import { RiNextjsFill } from "react-icons/ri";
         title: "MaReco",
         description: "Plateforme sociale facilitant le partage hebdomadaire de recommandations culturelles entre amis. En développement.",
         url: "https://github.com/CeliaBillaud/mareco",
-        techno: [FaPhp, SiLaravel, SiMysql, SiTailwindcss, FaReact]
+        techno: [FaPhp, SiSymfony, SiMysql, FaReact, SiTailwindcss]
     },
     {
         Logo: BriefcaseBusiness,
