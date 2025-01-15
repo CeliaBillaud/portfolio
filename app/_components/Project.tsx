@@ -2,7 +2,7 @@ import {LucideIcon, Beer, BriefcaseBusiness, Trophy, MessageSquareHeart} from "l
 import Link from "next/link"
 import { IconType } from 'react-icons'
 import { FaPhp, FaBootstrap, FaReact, FaCss3Alt } from 'react-icons/fa'
-import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTailwindcss, SiLaravel } from 'react-icons/si'
+import { SiSymfony, SiMysql, SiSass, SiJavascript, SiTailwindcss} from 'react-icons/si'
 import { RiNextjsFill } from "react-icons/ri";
 
 
